@@ -15,7 +15,7 @@ public class Dashboard extends javax.swing.JPanel {
      */
     public Dashboard() {
         initComponents();
-      setOpaque(false);
+        setOpaque(false);
     }
 
     /**
@@ -29,6 +29,7 @@ public class Dashboard extends javax.swing.JPanel {
 
         panelRound1 = new MytaskManager.Components.PanelRound();
         jLabel1 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         panelRound3 = new MytaskManager.Components.PanelRound();
         jLabel2 = new javax.swing.JLabel();
         panelRound4 = new MytaskManager.Components.PanelRound();
@@ -45,23 +46,32 @@ public class Dashboard extends javax.swing.JPanel {
         panelRound1.setRoundTopLeft(90);
         panelRound1.setRoundTopRight(90);
 
-        jLabel1.setText("Good morning tovi!");
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(142, 117, 117));
+        jLabel1.setText("Good morning ");
+
+        jLabel7.setText("time real world");
 
         javax.swing.GroupLayout panelRound1Layout = new javax.swing.GroupLayout(panelRound1);
         panelRound1.setLayout(panelRound1Layout);
         panelRound1Layout.setHorizontalGroup(
             panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelRound1Layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addComponent(jLabel1)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(panelRound1Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(jLabel7)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelRound1Layout.setVerticalGroup(
             panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelRound1Layout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(86, Short.MAX_VALUE))
+                .addGap(43, 43, 43)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(51, 51, 51)
+                .addComponent(jLabel7)
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         panelRound3.setRoundBottomLeft(90);
@@ -69,6 +79,8 @@ public class Dashboard extends javax.swing.JPanel {
         panelRound3.setRoundTopLeft(90);
         panelRound3.setRoundTopRight(90);
 
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(142, 117, 117));
         jLabel2.setText("Mytask");
 
         javax.swing.GroupLayout panelRound3Layout = new javax.swing.GroupLayout(panelRound3);
@@ -76,16 +88,16 @@ public class Dashboard extends javax.swing.JPanel {
         panelRound3Layout.setHorizontalGroup(
             panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelRound3Layout.createSequentialGroup()
-                .addGap(88, 88, 88)
+                .addGap(71, 71, 71)
                 .addComponent(jLabel2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(73, Short.MAX_VALUE))
         );
         panelRound3Layout.setVerticalGroup(
             panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelRound3Layout.createSequentialGroup()
-                .addGap(86, 86, 86)
+                .addGap(31, 31, 31)
                 .addComponent(jLabel2)
-                .addContainerGap(190, Short.MAX_VALUE))
+                .addContainerGap(245, Short.MAX_VALUE))
         );
 
         panelRound4.setRoundBottomLeft(90);
@@ -102,7 +114,7 @@ public class Dashboard extends javax.swing.JPanel {
             .addGroup(panelRound4Layout.createSequentialGroup()
                 .addGap(114, 114, 114)
                 .addComponent(jLabel3)
-                .addContainerGap(129, Short.MAX_VALUE))
+                .addContainerGap(137, Short.MAX_VALUE))
         );
         panelRound4Layout.setVerticalGroup(
             panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -126,7 +138,7 @@ public class Dashboard extends javax.swing.JPanel {
             .addGroup(panelRound5Layout.createSequentialGroup()
                 .addGap(124, 124, 124)
                 .addComponent(jLabel4)
-                .addContainerGap(112, Short.MAX_VALUE))
+                .addContainerGap(121, Short.MAX_VALUE))
         );
         panelRound5Layout.setVerticalGroup(
             panelRound5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -172,14 +184,14 @@ public class Dashboard extends javax.swing.JPanel {
         panelRound7Layout.setHorizontalGroup(
             panelRound7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelRound7Layout.createSequentialGroup()
-                .addGap(225, 225, 225)
+                .addGap(109, 109, 109)
                 .addComponent(jLabel6)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelRound7Layout.setVerticalGroup(
             panelRound7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelRound7Layout.createSequentialGroup()
-                .addGap(62, 62, 62)
+                .addGap(23, 23, 23)
                 .addComponent(jLabel6)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -234,6 +246,7 @@ public class Dashboard extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private MytaskManager.Components.PanelRound panelRound1;
     private MytaskManager.Components.PanelRound panelRound3;
     private MytaskManager.Components.PanelRound panelRound4;
